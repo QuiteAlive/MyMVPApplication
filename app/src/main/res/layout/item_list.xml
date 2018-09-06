@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_item_list_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="29px"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="216px"
+            android:layout_height="162px"
+            android:scaleType="fitXY"
+            android:id="@+id/im_item_list"
+            android:src="@mipmap/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="340px"
+            android:layout_height="162px"
+            android:layout_marginLeft="20px"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_list_title"
+            android:text="文章名"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#333"
+            android:textSize="32px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期"
+                android:id="@+id/tv_liem_list_data"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="32px"
+                android:textColor="#898989"
+                />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
