@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 
 public class WebActivity extends AppCompatActivity{
-    private static final String URL="www.github.com";
+    private static final String URL="www.github";
     private WebView webView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
