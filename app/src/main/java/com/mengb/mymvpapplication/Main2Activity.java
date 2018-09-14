@@ -63,6 +63,7 @@ public class Main2Activity extends AppCompatActivity{
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
+                Toast.makeText("ces");
 
 
             }
