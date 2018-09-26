@@ -8,7 +8,7 @@ public class JsonDataBean {
     private List<Datas> datas;
     private int offset;
     private boolean over;
-    private int pageCount;
+    private int pagecount;
     private int size;
     private int total;
 
@@ -45,11 +45,11 @@ public class JsonDataBean {
     }
 
     public int getPageCount() {
-        return pageCount;
+        return pagecount;
     }
 
     public void setPageCount(int pageCount) {
-        this.pageCount = pageCount;
+        this.pagecount = pageCount;
     }
 
     public int getSize() {

@@ -26,6 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".fragment.MainFragment"/>
+        <activity android:name=".WebActivity"/>
         <activity android:name=".Main2Activity"/>
     </application>
 

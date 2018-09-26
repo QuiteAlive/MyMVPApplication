@@ -62,11 +62,8 @@ public class DelEdittext extends LinearLayout  {
        ib.setVisibility(GONE);
     }
 
-
     public void showBtn() {
         ib.setVisibility(VISIBLE);
     }
-
-
 
 }

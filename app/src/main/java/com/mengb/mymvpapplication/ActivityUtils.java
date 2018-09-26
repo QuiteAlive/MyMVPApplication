@@ -16,8 +16,13 @@ public class ActivityUtils {
      * @param newcontext
      * @param oldcontext
      */
-    public static void StartOtherIntent(Context newcontext,Context oldcontext){
-        oldcontext.startActivity(new Intent(oldcontext,newcontext.getClass()));
+    public static void StartOtherIntent(Context oldcontext,Class newcontext,String url){
+        Intent intent = new Intent(oldcontext,newcontext);
+        intent.putExtra("url",url);
+        oldcontext.startActivity(intent);
+
+       // oldcontext.startActivity(new Intent(oldcontext,newcontext));
+
     }
 
     /**

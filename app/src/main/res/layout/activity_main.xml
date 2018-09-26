@@ -6,22 +6,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="Hello World!" />
 
     <com.mengb.mymvpapplication.adapter.DelEdittext
         android:layout_width="match_parent"
         android:layout_height="40dp"
         >
     </com.mengb.mymvpapplication.adapter.DelEdittext>
-
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ListView
         android:id="@+id/lv_data_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 </LinearLayout>

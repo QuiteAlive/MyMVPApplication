@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.mengb.mymvpapplication.ActivityUtils;
 import com.mengb.mymvpapplication.R;
+import com.mengb.mymvpapplication.WebActivity;
 import com.mengb.mymvpapplication.bean.Datas;
 import com.mengb.mymvpapplication.bean.JsonDataBean;
 
@@ -72,7 +74,8 @@ public class ListAdapter extends BaseAdapter{
                /* Intent intent=new Intent(listdatas.get(position).getLink());
                 context.startActivity(intent);*/
               //  context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(listdatas.get(position).getLink())));
-                ActivityUtils.StartURLIntent(context,listdatas.get(position).getLink());
+                //ActivityUtils.StartURLIntent(context,listdatas.get(position).getLink());
+                ActivityUtils.StartOtherIntent(context,WebActivity.class,listdatas.get(position).getLink());
 
                 //Toast.makeText(context,"作者"+listdatas.get(position).getAuthor(),Toast.LENGTH_SHORT).show();
 
